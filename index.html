@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="SJC Nexus - Empowering Safe, Sustainable, and Smart Mining">
+    <meta name="author" content="SJC Nexus">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <title>SJC Nexus</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/templatemo-chain-app-dev.css">
+    <link rel="stylesheet" href="assets/css/animated.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <style>
+    .header-area {
+        background: #fff;
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+        padding: 20px 0;
+    }
+
+    .header-area .main-nav .nav > li > a {
+        color: #333;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+
+    /* Preloader styles */
+    #js-preloader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        z-index: 9999;
+    }
+
+    /* Main banner styling */
+    .main-banner {
+        background-image: url('assets/images/bgimg.png');
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+    }
+
+    .main-banner .left-content {
+        padding-top: 100px;
+    }
+
+    .left-content h2 {
+        font-size: 3.5rem;
+        font-weight: 700;
+        color: #333;
+    }
+
+    /* Footer styling */
+    footer {
+        background-color: #333;
+        color: #fff;
+        padding: 50px 0;
+    }
+
+    footer p {
+        text-align: center;
+        color: #999;
+    }
+
+    /* Add other custom styles as needed */
+</style>
+
+</head>
+
+<body>
+
+    <!-- ***** Preloader Start ***** -->
+    <div id="js-preloader" class="js-preloader">
+        <div class="preloader-inner">
+            <span class="dot"></span>
+            <div class="dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <!-- ***** Preloader End ***** -->
+
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="index.html" class="logo" style="    margin-top: -17px">
+                            <img src="LOGO.png" height="100px" alt="SJC Nexus Logo">
+                        </a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav" style="margin-bottom: 20px;">
+                            <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
+                            <li class="scroll-to-section"><a href="#services">Products</a></li>
+                            <li class="scroll-to-section"><a href="#about">About</a></li>
+                            
+                            <li class="scroll-to-section"><a href="#pricing">Pricing</a></li>
+                            
+                            <li>
+                                <div class="gradient-button"><a id="modal_trigger" href="#modal"><i class="fa fa-sign-in-alt"></i> Sign In Now</a></div>
+                            </li>
+                        </ul>
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+    <div id="modal" class="popupContainer" style="display:none;">
+        <div class="popupHeader">
+            <span class="header_title">Login</span>
+            <span class="modal_close"><i class="fa fa-times"></i></span>
+        </div>
+
+        <section class="popupBody">
+            <!-- Social Login -->
+            <div class="social_login">
+                <div class="">
+                    <a href="#" class="social_box fb">
+                        <span class="icon"><i class="fab fa-facebook"></i></span>
+                        <span class="icon_title">Connect with Facebook</span>
+                    </a>
+
+                    <a href="#" class="social_box google">
+                        <span class="icon"><i class="fab fa-google-plus"></i></span>
+                        <span class="icon_title">Connect with Google</span>
+                    </a>
+                </div>
+
+                <div class="centeredText">
+                    <span>Or use your Email address</span>
+                </div>
+
+                <div class="action_btns">
+                    <div class="one_half"><a href="#" id="login_form" class="btn">Login</a></div>
+                    <div class="one_half last"><a href="#" id="register_form" class="btn">Sign up</a></div>
+                </div>
+            </div>
+
+            <!-- Username & Password Login form -->
+            <div class="user_login">
+                <form>
+                    <label>Email / Username</label>
+                    <input type="text" />
+                    <br />
+
+                    <label>Password</label>
+                    <input type="password" />
+                    <br />
+
+                    <div class="checkbox">
+                        <input id="remember" type="checkbox" />
+                        <label for="remember">Remember me on this computer</label>
+                    </div>
+
+                    <div class="action_btns">
+                        <div class="one_half"><a href="#" class="btn back_btn"><i class="fa fa-angle-double-left"></i> Back</a></div>
+                        <div class="one_half last"><a href="#" class="btn btn_red">Login</a></div>
+                    </div>
+                </form>
+
+                <a href="#" class="forgot_password">Forgot password?</a>
+            </div>
+
+            <!-- Register Form -->
+            <div class="user_register">
+                <form>
+                    <label>Full Name</label>
+                    <input type="text" />
+                    <br />
+
+                    <label>Email Address</label>
+                    <input type="email" />
+                    <br />
+
+                    <label>Password</label>
+                    <input type="password" />
+                    <br />
+
+                    <div class="checkbox">
+                        <input id="send_updates" type="checkbox" />
+                        <label for="send_updates">Send me occasional email updates</label>
+                    </div>
+
+                    <div class="action_btns">
+                        <div class="one_half"><a href="#" class="btn back_btn"><i class="fa fa-angle-double-left"></i> Back</a></div>
+                        <div class="one_half last"><a href="#" class="btn btn_red">Register</a></div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <div class="main-banner wow fadeIn" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="row">
+                        <div class="col-lg-6 align-self-center">
+                            <div class="left-content show-up header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <h2>Welcome to SJC Nexus </h2>
+                                        <p>We are proud to introduce our cutting-edge products designed to optimize mining operations, improve efficiency, and maximize production. Our innovative technologies are engineered to address the unique challenges faced by the mining industry.</p>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="white-button first-button scroll-to-section">
+                                            <a href="#contact">Get Started </a>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="right-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
+                                <img src="bgimg.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <div id="services" class="services section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="section-heading wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
+                        <h4><em>Our Products</em></h4>
+                        <p>Explore our innovative products designed to enhance mining efficiency and reduce operational costs.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="service-item first-service">
+                        <h4>Blasto-S</h4>
+                        <p>Revolutionizing particle sizing after blasting, enabling mines to enhance production by up to six percent through precise crusher gap adjustments.</p>
+                        <div class="text-button">
+                            <a href="#">Read More <i class="fa fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="service-item second-service">
+                        <h4>Trucko-T</h4>
+                        <p>Installed on truck, Trucko-S addresses the critical issue of crusher delays caused by oversized materials, ensuring seamless operations.</p>
+                        <div class="text-button">
+                            <a href="#">Read More <i class="fa fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="service-item third-service">
+                        <h4>Belto-B</h4>
+                        <p>Designed to be installed on belts, Trucko-T provides continuous monitoring of particle size and detects boulders in real-time to minimize downtime.</p>
+                        <div class="text-button">
+                            <a href="#">Read More <i class="fa fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div id="about" class="about-us section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 align-self-center">
+                    <div class="section-heading">
+                        <h4>About SJC Nexus</h4>
+                        <img src="assets/images/heading-line-dec.png" alt="">
+                        <p>At SJC Nexus, we are committed to revolutionizing the mining industry by leveraging cutting-edge technology to make mining operations safer, more sustainable, and smarter.</p>
+                    </div>
+                    <div class="column">
+                        <div class="">
+                            <div class="box-item">
+                                <h4><a href="#">Our Mission</a></h4>
+                                <p>To create and deploy innovative technology by leveraging rugged machine vision and AI to address tough mining challenges.</p>
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="box-item">
+                                <h4><a href="#">Our Vision</a></h4>
+                                <p>To inspire a new generation of smart and sustainable mining practices.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="gradient-button">
+                                <a href="#">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="right-image">
+                        <img src="compare-1.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Challenges Section -->
+    <div id="challenges" class="challenges section">
+        <div class="container">
+            <div class="row" style="
+            margin-top: 89px;
+            /* margin-left: -83px; */
+            align-items: center;
+            justify-content: center;"
+        >
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="section-heading">
+                        <h4>Challenges in the Mining Industry</h4>
+                        <img src="assets/images/heading-line-dec.png" alt="">
+                        
+                        <p>Identifying and solving the most pressing issues faced by mining operations.</p>
+                    </div>
+                </div>
+                <div class="col-lg-12" style="
+                /* width: 196px; */
+                /* margin: 68px; */
+                padding: 97px;
+                display: flex;
+                justify-content: space-around;
+            ">
+                    <div class="box-item">
+                        <h4>Equipment Downtime</h4>
+                        <p>One of the costliest issues in mining is the downtime of critical equipment such as crushers, shovels, and loaders, often caused by G.E.T. components.</p>
+                    </div>
+                    <div class="box-item">
+                        <h4>Inconsistent Blasting</h4>
+                        <p>Improper placement or incorrect amounts of dynamite can lead to inconsistent blasting, resulting in large boulders, medium fragments, and very small fragments, each causing different operational challenges.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  
+
+    <!-- Pricing Section -->
+    <div id="pricing" class="pricing-tables section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="section-heading">
+                        <h4>Our Pricing</h4>
+                        <p>Competitive pricing options tailored to meet your operational needs.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="pricing-item-regular">
+                        <span class="price">₹4 lakhs</span>
+                        <h4>Blaso-s Software</h4>
+                        <ul>
+                            <li>Advanced rock fragmentation analysis</li>
+                            <li>Real-time data feedback</li>
+                            <li>Easy integration with existing systems</li>
+                        </ul>
+                        <div class="border-button">
+                            <a href="#">Purchase Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="pricing-item-pro">
+                        <span class="price">₹3 lakhs</span>
+                        <h4>Belto-b Hardware</h4>
+                        <ul>
+                            <li>Continuous monitoring of particle size</li>
+                            <li>Real-time boulder detection</li>
+                            <li>Durable and reliable design</li>
+                        </ul>
+                        <div class="border-button">
+                            <a href="#">Purchase Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="pricing-item-regular">
+                        <span class="price">₹3 lakhs</span>
+                        <h4>Trucko-s Hardware</h4>
+                        <ul>
+                            <li>Scalable hardware for various operations</li>
+                            <li>Advanced networking and communication capabilities</li>
+                            <li>Robust and adaptable</li>
+                        </ul>
+                        <div class="border-button">
+                            <a href="#">Purchase Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <div class="footer">
+        <div class="card text-center">
+            
+            <div class="card-body">
+              <h5 class="card-title">SJC nexus</h5>
+              
+              
+            </div>
+            
+          </div>
+    </div>
+
+    
+
+    <!-- Scripts -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/animation.js"></script>
+    <script src="assets/js/imagesloaded.js"></script>
+    <script src="assets/js/popup.js"></script>
+    <script src="assets/js/custom.js"></script>
+</body>
+
+</html>
